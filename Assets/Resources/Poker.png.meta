@@ -1,70 +1,70 @@
 fileFormatVersion: 2
 guid: 1d8a8f328be21a147aa744f1156fb4f9
-timeCreated: 1500269548
+timeCreated: 1500346618
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Poker_0
-    21300002: Poker_1
-    21300004: Poker_2
-    21300006: Poker_3
-    21300008: Poker_4
-    21300010: Poker_5
-    21300012: Poker_6
-    21300014: Poker_7
-    21300016: Poker_8
-    21300018: Poker_9
-    21300020: Poker_10
-    21300022: Poker_11
-    21300024: Poker_12
-    21300026: Poker_13
-    21300028: Poker_14
-    21300030: Poker_15
-    21300032: Poker_16
-    21300034: Poker_17
-    21300036: Poker_18
-    21300038: Poker_19
-    21300040: Poker_20
-    21300042: Poker_21
-    21300044: Poker_22
-    21300046: Poker_23
-    21300048: Poker_24
-    21300050: Poker_25
-    21300052: Poker_26
-    21300054: Poker_27
-    21300056: Poker_28
-    21300058: Poker_29
-    21300060: Poker_30
-    21300062: Poker_31
-    21300064: Poker_32
-    21300066: Poker_33
-    21300068: Poker_34
-    21300070: Poker_35
-    21300072: Poker_36
-    21300074: Poker_37
-    21300076: Poker_38
-    21300078: Poker_39
-    21300080: Poker_40
-    21300082: Poker_41
-    21300084: Poker_42
-    21300086: Poker_43
-    21300088: Poker_44
-    21300090: Poker_45
-    21300092: Poker_46
-    21300094: Poker_47
-    21300096: Poker_48
-    21300098: Poker_49
-    21300100: Poker_50
-    21300102: Poker_51
-    21300104: Poker_52
-    21300106: Poker_53
-    21300108: Poker_54
-    21300110: Poker_55
-    21300112: Poker_56
-    21300114: Poker_57
-    21300116: Poker_58
-    21300118: Poker_59
-    21300120: Poker_60
+    21300000: ClueEight
+    21300002: ClueFive
+    21300004: ClueFour
+    21300006: ClueJack
+    21300008: ClueKing
+    21300010: ClueNine
+    21300012: ClueOne
+    21300014: ClueQueue
+    21300016: ClueSeven
+    21300018: ClueSix
+    21300020: ClueTen
+    21300022: ClueThree
+    21300024: ClueTwo
+    21300026: DiamondEight
+    21300028: DiamondFive
+    21300030: DiamondFour
+    21300032: DiamondJack
+    21300034: DiamondKing
+    21300036: DiamondNine
+    21300038: DiamondOne
+    21300040: DiamondQueue
+    21300042: DiamondSeven
+    21300044: DiamondSix
+    21300046: DiamondTen
+    21300048: DiamondThree
+    21300050: DiamondTwo
+    21300052: HeartEight
+    21300054: HeartFive
+    21300056: HeartFour
+    21300058: HeartJack
+    21300060: HeartKing
+    21300062: HeartNine
+    21300064: HeartOne
+    21300066: HeartQueue
+    21300068: HeartSeven
+    21300070: HeartSix
+    21300072: HeartTen
+    21300074: HeartThree
+    21300076: HeartTwo
+    21300078: Identity_Farmer
+    21300080: Identity_Landlord
+    21300082: LJoker
+    21300084: SJoker
+    21300086: SmallCardBack1
+    21300088: SpadeEight
+    21300090: SpadeFive
+    21300092: SpadeFour
+    21300094: SpadeJack
+    21300096: SpadeKing
+    21300098: SpadeNine
+    21300100: SpadeOne
+    21300102: SpadeQueue
+    21300104: SpadeSeven
+    21300106: SpadeSix
+    21300108: SpadeTen
+    21300110: SpadeThree
+    21300112: SpadeTwo
+    21300114: buchu
+    21300116: game_bg_clock
+    21300118: role
+    21300120: role1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -80,7 +80,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -139,33 +139,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Poker_0
+      name: ClueEight
       rect:
         serializedVersion: 2
         x: 2
-        y: 918
+        y: 920
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_1
+      name: ClueFive
       rect:
         serializedVersion: 2
         x: 84
-        y: 918
+        y: 920
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_2
+      name: ClueFour
       rect:
         serializedVersion: 2
         x: 166
@@ -173,12 +185,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_3
+      name: ClueJack
       rect:
         serializedVersion: 2
         x: 248
@@ -186,12 +204,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_4
+      name: ClueKing
       rect:
         serializedVersion: 2
         x: 330
@@ -199,12 +223,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_5
+      name: ClueNine
       rect:
         serializedVersion: 2
         x: 412
@@ -212,25 +242,36 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_6
+      name: ClueOne
       rect:
         serializedVersion: 2
-        x: 494
+        x: 499
         y: 918
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_7
+      name: ClueQueue
       rect:
         serializedVersion: 2
         x: 576
@@ -238,12 +279,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_8
+      name: ClueSeven
       rect:
         serializedVersion: 2
         x: 658
@@ -251,12 +298,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_9
+      name: ClueSix
       rect:
         serializedVersion: 2
         x: 740
@@ -264,25 +317,35 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_10
+      name: ClueTen
       rect:
         serializedVersion: 2
-        x: 822
+        x: 824
         y: 918
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_11
+      name: ClueThree
       rect:
         serializedVersion: 2
         x: 904
@@ -290,12 +353,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_12
+      name: ClueTwo
       rect:
         serializedVersion: 2
         x: 2
@@ -303,12 +372,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_13
+      name: DiamondEight
       rect:
         serializedVersion: 2
         x: 84
@@ -316,12 +391,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_14
+      name: DiamondFive
       rect:
         serializedVersion: 2
         x: 166
@@ -329,12 +410,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_15
+      name: DiamondFour
       rect:
         serializedVersion: 2
         x: 248
@@ -342,12 +429,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_16
+      name: DiamondJack
       rect:
         serializedVersion: 2
         x: 330
@@ -355,12 +448,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_17
+      name: DiamondKing
       rect:
         serializedVersion: 2
         x: 412
@@ -368,12 +467,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_18
+      name: DiamondNine
       rect:
         serializedVersion: 2
         x: 494
@@ -381,12 +486,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_19
+      name: DiamondOne
       rect:
         serializedVersion: 2
         x: 576
@@ -394,12 +505,17 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_20
+      name: DiamondQueue
       rect:
         serializedVersion: 2
         x: 658
@@ -407,12 +523,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_21
+      name: DiamondSeven
       rect:
         serializedVersion: 2
         x: 740
@@ -420,12 +542,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_22
+      name: DiamondSix
       rect:
         serializedVersion: 2
         x: 822
@@ -433,12 +561,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_23
+      name: DiamondTen
       rect:
         serializedVersion: 2
         x: 904
@@ -446,12 +580,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_24
+      name: DiamondThree
       rect:
         serializedVersion: 2
         x: 2
@@ -459,12 +599,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_25
+      name: DiamondTwo
       rect:
         serializedVersion: 2
         x: 84
@@ -472,12 +618,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_26
+      name: HeartEight
       rect:
         serializedVersion: 2
         x: 166
@@ -485,12 +637,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_27
+      name: HeartFive
       rect:
         serializedVersion: 2
         x: 248
@@ -498,12 +654,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_28
+      name: HeartFour
       rect:
         serializedVersion: 2
         x: 330
@@ -511,12 +671,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_29
+      name: HeartJack
       rect:
         serializedVersion: 2
         x: 412
@@ -524,12 +688,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_30
+      name: HeartKing
       rect:
         serializedVersion: 2
         x: 494
@@ -537,12 +707,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_31
+      name: HeartNine
       rect:
         serializedVersion: 2
         x: 576
@@ -550,12 +726,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_32
+      name: HeartOne
       rect:
         serializedVersion: 2
         x: 658
@@ -563,12 +743,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_33
+      name: HeartQueue
       rect:
         serializedVersion: 2
         x: 740
@@ -576,12 +760,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_34
+      name: HeartSeven
       rect:
         serializedVersion: 2
         x: 822
@@ -589,12 +779,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_35
+      name: HeartSix
       rect:
         serializedVersion: 2
         x: 904
@@ -602,12 +796,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_36
+      name: HeartTen
       rect:
         serializedVersion: 2
         x: 2
@@ -615,12 +813,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_37
+      name: HeartThree
       rect:
         serializedVersion: 2
         x: 84
@@ -628,12 +830,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_38
+      name: HeartTwo
       rect:
         serializedVersion: 2
         x: 166
@@ -641,25 +847,36 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_39
+      name: Identity_Farmer
       rect:
         serializedVersion: 2
-        x: 249
+        x: 251
         y: 623
         width: 83
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -41.5, y: 40}
+        - {x: -41.5, y: -38}
+        - {x: -34.5, y: -40}
+        - {x: 29.5, y: -40}
+        - {x: 41.5, y: -37}
+        - {x: 41.5, y: 24}
+        - {x: 19.5, y: 40}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_40
+      name: Identity_Landlord
       rect:
         serializedVersion: 2
         x: 334
@@ -667,12 +884,22 @@ TextureImporter:
         width: 96
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -46, y: 47}
+        - {x: -48, y: 45}
+        - {x: -48, y: -43}
+        - {x: -41, y: -47}
+        - {x: 48, y: -47}
+        - {x: 48, y: 47}
+      - - {x: 47, y: -47}
+        - {x: 47, y: -45}
+        - {x: 44, y: -44}
+        - {x: 42, y: -47}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_41
+      name: LJoker
       rect:
         serializedVersion: 2
         x: 432
@@ -680,12 +907,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_42
+      name: SJoker
       rect:
         serializedVersion: 2
         x: 514
@@ -693,25 +924,34 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_43
+      name: SmallCardBack1
       rect:
         serializedVersion: 2
-        x: 597
+        x: 598
         y: 616
         width: 66
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 44}
+        - {x: -33, y: 43}
+        - {x: -33, y: -44}
+        - {x: 33, y: -44}
+        - {x: 33, y: 44}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_44
+      name: SpadeEight
       rect:
         serializedVersion: 2
         x: 665
@@ -719,12 +959,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_45
+      name: SpadeFive
       rect:
         serializedVersion: 2
         x: 747
@@ -732,25 +976,33 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_46
+      name: SpadeFour
       rect:
         serializedVersion: 2
-        x: 829
+        x: 831
         y: 600
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_47
+      name: SpadeJack
       rect:
         serializedVersion: 2
         x: 911
@@ -758,12 +1010,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_48
+      name: SpadeKing
       rect:
         serializedVersion: 2
         x: 2
@@ -771,12 +1029,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_49
+      name: SpadeNine
       rect:
         serializedVersion: 2
         x: 84
@@ -784,12 +1048,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_50
+      name: SpadeOne
       rect:
         serializedVersion: 2
         x: 166
@@ -797,12 +1065,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_51
+      name: SpadeQueue
       rect:
         serializedVersion: 2
         x: 248
@@ -810,12 +1082,18 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -39, y: 52}
+        - {x: -40, y: 51}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 51}
+        - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_52
+      name: SpadeSeven
       rect:
         serializedVersion: 2
         x: 330
@@ -823,12 +1101,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_53
+      name: SpadeSix
       rect:
         serializedVersion: 2
         x: 412
@@ -836,12 +1118,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_54
+      name: SpadeTen
       rect:
         serializedVersion: 2
         x: 494
@@ -849,12 +1135,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_55
+      name: SpadeThree
       rect:
         serializedVersion: 2
         x: 576
@@ -862,12 +1152,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_56
+      name: SpadeTwo
       rect:
         serializedVersion: 2
         x: 658
@@ -875,12 +1169,16 @@ TextureImporter:
         width: 80
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -40, y: 52}
+        - {x: -40, y: -52}
+        - {x: 40, y: -52}
+        - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_57
+      name: buchu
       rect:
         serializedVersion: 2
         x: 740
@@ -888,12 +1186,16 @@ TextureImporter:
         width: 124
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -62, y: 21.5}
+        - {x: -62, y: -21.5}
+        - {x: 62, y: -21.5}
+        - {x: 62, y: 21.5}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_58
+      name: game_bg_clock
       rect:
         serializedVersion: 2
         x: 866
@@ -901,12 +1203,20 @@ TextureImporter:
         width: 70
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 33, y: 34.5}
+        - {x: -35, y: 34.5}
+        - {x: -35, y: -4.5}
+        - {x: -26, y: -34.5}
+        - {x: 22, y: -34.5}
+        - {x: 27, y: -32.5}
+        - {x: 35, y: 7.5}
+        - {x: 35, y: 33.5}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_59
+      name: role
       rect:
         serializedVersion: 2
         x: 2
@@ -914,22 +1224,38 @@ TextureImporter:
         width: 116
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -23, y: 67}
+        - {x: -58, y: 24}
+        - {x: -58, y: -30}
+        - {x: -45, y: -67}
+        - {x: 49, y: -67}
+        - {x: 58, y: -64}
+        - {x: 58, y: 54}
+        - {x: 16, y: 67}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Poker_60
+      name: role1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 366
+        x: 124
+        y: 368
         width: 122
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -44, y: 63}
+        - {x: -61, y: 40}
+        - {x: -61, y: -32}
+        - {x: -43, y: -63}
+        - {x: 45, y: -63}
+        - {x: 61, y: -45}
+        - {x: 61, y: 44}
+        - {x: 12, y: 63}
       tessellationDetail: 0
     outline: []
   spritePackingTag: Cards
