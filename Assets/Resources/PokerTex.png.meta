@@ -1,22 +1,22 @@
 fileFormatVersion: 2
 guid: 1d8a8f328be21a147aa744f1156fb4f9
-timeCreated: 1500346618
+timeCreated: 1500434480
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ClueEight
-    21300002: ClueFive
-    21300004: ClueFour
-    21300006: ClueJack
-    21300008: ClueKing
-    21300010: ClueNine
-    21300012: ClueOne
-    21300014: ClueQueue
-    21300016: ClueSeven
-    21300018: ClueSix
-    21300020: ClueTen
-    21300022: ClueThree
-    21300024: ClueTwo
+    21300000: ClubEight
+    21300002: ClubFive
+    21300004: ClubFour
+    21300006: ClubJack
+    21300008: ClubKing
+    21300010: ClubNine
+    21300012: ClubOne
+    21300014: ClubQueen
+    21300016: ClubSeven
+    21300018: ClubSix
+    21300020: ClubTen
+    21300022: ClubThree
+    21300024: ClubTwo
     21300026: DiamondEight
     21300028: DiamondFive
     21300030: DiamondFour
@@ -24,7 +24,7 @@ TextureImporter:
     21300034: DiamondKing
     21300036: DiamondNine
     21300038: DiamondOne
-    21300040: DiamondQueue
+    21300040: DiamondQueen
     21300042: DiamondSeven
     21300044: DiamondSix
     21300046: DiamondTen
@@ -37,7 +37,7 @@ TextureImporter:
     21300060: HeartKing
     21300062: HeartNine
     21300064: HeartOne
-    21300066: HeartQueue
+    21300066: HeartQueen
     21300068: HeartSeven
     21300070: HeartSix
     21300072: HeartTen
@@ -55,7 +55,7 @@ TextureImporter:
     21300096: SpadeKing
     21300098: SpadeNine
     21300100: SpadeOne
-    21300102: SpadeQueue
+    21300102: SpadeQueen
     21300104: SpadeSeven
     21300106: SpadeSix
     21300108: SpadeTen
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClueEight
+      name: ClubEight
       rect:
         serializedVersion: 2
         x: 2
@@ -158,7 +158,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueFive
+      name: ClubFive
       rect:
         serializedVersion: 2
         x: 84
@@ -177,7 +177,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueFour
+      name: ClubFour
       rect:
         serializedVersion: 2
         x: 166
@@ -196,7 +196,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueJack
+      name: ClubJack
       rect:
         serializedVersion: 2
         x: 248
@@ -215,7 +215,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueKing
+      name: ClubKing
       rect:
         serializedVersion: 2
         x: 330
@@ -234,7 +234,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueNine
+      name: ClubNine
       rect:
         serializedVersion: 2
         x: 412
@@ -253,7 +253,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueOne
+      name: ClubOne
       rect:
         serializedVersion: 2
         x: 499
@@ -271,7 +271,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueQueue
+      name: ClubQueen
       rect:
         serializedVersion: 2
         x: 576
@@ -290,7 +290,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueSeven
+      name: ClubSeven
       rect:
         serializedVersion: 2
         x: 658
@@ -309,7 +309,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueSix
+      name: ClubSix
       rect:
         serializedVersion: 2
         x: 740
@@ -328,7 +328,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueTen
+      name: ClubTen
       rect:
         serializedVersion: 2
         x: 824
@@ -345,7 +345,7 @@ TextureImporter:
         - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueThree
+      name: ClubThree
       rect:
         serializedVersion: 2
         x: 904
@@ -364,7 +364,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ClueTwo
+      name: ClubTwo
       rect:
         serializedVersion: 2
         x: 2
@@ -515,7 +515,7 @@ TextureImporter:
         - {x: 39, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: DiamondQueue
+      name: DiamondQueen
       rect:
         serializedVersion: 2
         x: 658
@@ -752,7 +752,7 @@ TextureImporter:
         - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: HeartQueue
+      name: HeartQueen
       rect:
         serializedVersion: 2
         x: 740
@@ -1074,7 +1074,7 @@ TextureImporter:
         - {x: 40, y: 52}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SpadeQueue
+      name: SpadeQueen
       rect:
         serializedVersion: 2
         x: 248

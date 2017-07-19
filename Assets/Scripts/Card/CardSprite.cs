@@ -6,18 +6,10 @@ using UnityEngine.UI;
 public class CardSprite : MonoBehaviour {
 
     public Card card;
-    private Sprite sprite;
     private bool isSelected;
-    private Dictionary<string,Sprite> sprites;
 
 	void Start () {
-        var temp = Resources.LoadAll<Sprite>("Poker");
-        sprites = new Dictionary<string, Sprite>();
-        foreach (var te in temp)
-        {
-            sprites.Add(te.name, te);
-        }
-        sprite = gameObject.GetComponent<Image>().sprite;
+       
 	}
 
     public Card Poker
@@ -41,11 +33,27 @@ public class CardSprite : MonoBehaviour {
     {
         if (card.Attribution == CharacterType.Player || card.Attribution == CharacterType.Desk)
         {
-            sprite = sprites[card.GetCardName()];
+            try
+            {
+                gameObject.GetComponent<Image>().sprite = SpriteController.Instance.Sprites[card.GetCardName()];
+            }
+            catch (System.Exception e)
+            { 
+             
+            }
+           
         }
         else
         {
-            sprite = sprites["SmallCardBack1"];
+            try
+            {
+                gameObject.GetComponent<Image>().sprite = SpriteController.Instance.Sprites["SmallCardBack1"];
+            }
+            catch (System.Exception e)
+            {
+
+            }
+            
         }
     }
     /// <summary>
@@ -63,22 +71,39 @@ public class CardSprite : MonoBehaviour {
     /// </summary>
     public void GoToPosition(GameObject parent, int index)
     {
-        
+        gameObject.transform.SetSiblingIndex(index);
+        if (card.Attribution == CharacterType.Player)
+        {
+            transform.localPosition =  Vector3.right * 25 * index;
+            if (isSelected)
+            {
+                transform.localPosition = Vector3.up * 10;
+            }
+        }
+        else if(card.Attribution== CharacterType.ComputerOne||
+            card.Attribution== CharacterType.ComputerTwo)
+        {
+            transform.localPosition =  Vector3.up * -25 * index;
+        }
+        else if (card.Attribution == CharacterType.Desk)
+        {
+            transform.localPosition =  Vector3.right * 25 * index;
+        }
     }
     public void PokerClick()
     {
-        if (card.Attribution == CharacterType.Player)
-        {
-            if (isSelected)
-            {
-                transform.localPosition -= Vector3.up * 10;
-                isSelected = false;
-            }
-            else
-            {
-                transform.localPosition += Vector3.up * 10;
-                isSelected = true;
-            }
-        }
+        //if (card.Attribution == CharacterType.Player)
+        //{
+        //    if (isSelected)
+        //    {
+        //        transform.localPosition -= Vector3.up * 10;
+        //        isSelected = false;
+        //    }
+        //    else
+        //    {
+        //        transform.localPosition += Vector3.up * 10;
+        //        isSelected = true;
+        //    }
+        //}
     }
 }

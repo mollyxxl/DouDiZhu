@@ -62,14 +62,46 @@ public class GameController : MonoBehaviour {
     }
  
 
-    public static void AdjustCardSpritsPosition(CharacterType characterType)
+    public static void AdjustCardSpritsPosition(CharacterType type)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("调整位置");
+        if (type == CharacterType.Desk)
+        {
+            GameObject parent = GameObject.Find("Canvas/" + type.ToString() + "/StartPoint");
+            CardSprite[] cs = parent.GetComponentsInChildren<CardSprite>();
+            for (int i = 0; i < cs.Length; i++)
+            {
+                for (int j = 0; j < cs.Length; j++)
+                {
+                    if (cs[j].Poker == DeskCardsCache.Instance[i])
+                    {
+                        cs[j].GoToPosition(parent, i);
+                    }
+                }
+            }
+        }
+        else
+        {
+            HandCards hc = GameObject.Find(type.ToString()).GetComponent<HandCards>();
+            var parent = GameObject.Find("Canvas/" + type.ToString() + "/StartPoint");
+            CardSprite[] cs = parent.GetComponentsInChildren<CardSprite>();
+            for (int i = 0; i < hc.CardsCount; i++)
+            {
+                for (int j = 0; j < cs.Length; j++)
+                {
+                    if (cs[j].Poker == hc[i])
+                    {
+                        cs[j].GoToPosition(parent, i);
+                    }
+                }
+            }
+        }
+
     }
 
     public static  void UpdateLeftCardsCount(CharacterType characterType, int p)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("显示剩余");
     }
     public void DealCards()
     {
@@ -141,9 +173,12 @@ public class GameController : MonoBehaviour {
     {
         if (!card.isSprite)
         {
-            GameObject obj = Resources.Load("poker") as GameObject;
-           // GameObject poker = NGUITools.AddChild(GameObject.Find(type.ToString()), obj);
-            obj.transform.SetParent(GameObject.Find(type.ToString()).transform);
+            var poker = Resources.Load("Poker") as GameObject;
+            var obj = GameObject.Instantiate(poker);
+            obj.transform.localPosition = Vector3.zero;
+            obj.transform.localEulerAngles = Vector3.zero;
+            obj.transform.localScale = Vector3.one;
+            obj.transform.SetParent(GameObject.Find(type.ToString()).transform.Find("StartPoint").transform, false);  //需要设置相对坐标系，否则这句放到前面写去
             CardSprite sprite = obj.gameObject.GetComponent<CardSprite>();
             sprite.Poker = card;
             sprite.Select = selected;
