@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void CardEvent(bool arg);
 public class OrderController 
 {
-    private CharacterType biggest;
-    private CharacterType currentAuthority;
+    private CharacterType biggest; //最大出牌者
+    private CharacterType currentAuthority;//当前出牌者
     private static OrderController instance;
+    public event CardEvent smartCard;
+    public event CardEvent activeButton;
     public static OrderController Instance
     {
         get {
@@ -34,10 +37,12 @@ public class OrderController
         if (currentAuthority == CharacterType.Player)
         {
             //玩家
+            activeButton(false);
         }
         else 
         { 
           //电脑
+            smartCard(true);
         }
     }
     public void Turn()
@@ -50,12 +55,12 @@ public class OrderController
 
         if (currentAuthority == CharacterType.ComputerOne ||
             currentAuthority == CharacterType.ComputerTwo)
-        { 
-            
+        {
+            smartCard(biggest == currentAuthority);
         }
         else if (currentAuthority == CharacterType.Player)
-        { 
-          
+        {
+            activeButton(biggest != currentAuthority);
         }
     }
 }

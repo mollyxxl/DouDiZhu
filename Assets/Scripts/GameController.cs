@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
     public int basePointPerMatch; //底分
     public int multiples;//全场倍数
     public int MatchType = 0; //0 :Easy  1:Normal
+
+    public Button btn_FaPai;
+    public Button btn_bujiao;
+    public Button btn_jiao;
+    public Button btn_Play;
+    public Button btn_DisPlay;
     
 	// Use this for initialization
 	void Start () {
@@ -13,7 +20,11 @@ public class GameController : MonoBehaviour {
         basePointPerMatch = 100;
         //根据类型加载
 
+
+        OrderController.Instance.activeButton += Btn_activeButton;
 	}
+
+   
     void InitMenu()
     {
         if (MatchType == 0) {
@@ -65,6 +76,7 @@ public class GameController : MonoBehaviour {
     public static void AdjustCardSpritsPosition(CharacterType type)
     {
         Debug.Log("调整位置");
+
         if (type == CharacterType.Desk)
         {
             GameObject parent = GameObject.Find("Canvas/" + type.ToString() + "/StartPoint");
@@ -95,6 +107,7 @@ public class GameController : MonoBehaviour {
                     }
                 }
             }
+
         }
 
     }
@@ -210,7 +223,6 @@ public class GameController : MonoBehaviour {
         HandCards cards = parentObj.GetComponent<HandCards>();
         cards.Multiples = 2;
 
-
         CardSprite[] sprites = GameObject.Find("Desk").GetComponentsInChildren<CardSprite>();
         for (int i = 0; i < sprites.Length; i++)
         {
@@ -246,5 +258,57 @@ public class GameController : MonoBehaviour {
         { 
           
         }
+    }
+    /// <summary>
+    /// 发牌按钮点击事件
+    /// </summary>
+    public void Btn_FaPai_Click()
+    {
+        DealCards();
+        btn_FaPai.gameObject.SetActive(false);
+        btn_bujiao.gameObject.SetActive(true);
+        btn_jiao.gameObject.SetActive(true);
+    }
+    /// <summary>
+    /// 抢
+    /// </summary>
+    public void Btn_Jiaodizhu_Click()
+    {
+        CardsOnTable(CharacterType.Player);
+        OrderController.Instance.Init(CharacterType.Player);
+        btn_jiao.gameObject.SetActive(false);
+        btn_bujiao.gameObject.SetActive(false);
+    }
+    /// <summary>
+    /// 不抢
+    /// </summary>
+    public void Btn_Bujiao_Click()
+    {
+        int index = Random.Range(2, 4);
+        CardsOnTable((CharacterType)index);
+        OrderController.Instance.Init((CharacterType)index);
+        btn_jiao.gameObject.SetActive(false);
+        btn_bujiao.gameObject.SetActive(false);
+    }
+    void Btn_activeButton(bool arg)
+    {
+        btn_Play.gameObject.SetActive(true);
+        btn_DisPlay.gameObject.SetActive(true);
+        btn_DisPlay.enabled = arg;
+    }
+    public void Btn_Play_Click()
+    {
+        PlayCard playCard = GameObject.Find("Player").GetComponent<PlayCard>();
+        if (playCard.CheckSelectCards())
+        {
+            btn_Play.gameObject.SetActive(false);
+            btn_DisPlay.gameObject.SetActive(false);
+        }
+    }
+    public void Btn_DisPlay_Click()
+    {
+        OrderController.Instance.Turn();
+        btn_Play.gameObject.SetActive(false);
+        btn_DisPlay.gameObject.SetActive(false);
     }
 }

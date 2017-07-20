@@ -7,10 +7,14 @@ public class CardSprite : MonoBehaviour {
 
     public Card card;
     private bool isSelected;
-
+   
 	void Start () {
-       
-	}
+        var btn = gameObject.GetComponent<Button>();
+        if (btn != null)
+        {
+            btn.onClick.AddListener(PokerClick);
+        }
+    }
 
     public Card Poker
     {
@@ -77,8 +81,9 @@ public class CardSprite : MonoBehaviour {
             transform.localPosition =  Vector3.right * 25 * index;
             if (isSelected)
             {
-                transform.localPosition = Vector3.up * 10;
+                transform.localPosition += Vector3.up * 10;
             }
+          //  Debug.Log("localPosition" + transform.localPosition);
         }
         else if(card.Attribution== CharacterType.ComputerOne||
             card.Attribution== CharacterType.ComputerTwo)
@@ -90,20 +95,24 @@ public class CardSprite : MonoBehaviour {
             transform.localPosition =  Vector3.right * 25 * index;
         }
     }
+    /// <summary>
+    /// 卡牌点击效果
+    /// </summary>
     public void PokerClick()
     {
-        //if (card.Attribution == CharacterType.Player)
-        //{
-        //    if (isSelected)
-        //    {
-        //        transform.localPosition -= Vector3.up * 10;
-        //        isSelected = false;
-        //    }
-        //    else
-        //    {
-        //        transform.localPosition += Vector3.up * 10;
-        //        isSelected = true;
-        //    }
-        //}
+        Debug.Log("点击卡牌" + card.GetCardName());
+        if (card.Attribution == CharacterType.Player)
+        {
+            if (isSelected)
+            {
+                transform.localPosition -= Vector3.up * 10;
+                isSelected = false;
+            }
+            else
+            {
+                transform.localPosition += Vector3.up * 10;
+                isSelected = true;
+            }
+        }
     }
 }

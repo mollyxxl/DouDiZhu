@@ -6,7 +6,7 @@ public class PlayCard : MonoBehaviour {
 
     public bool CheckSelectCards()
     {
-        CardSprite[] sprites = this.GetComponentsInChildren<CardSprite>();
+        CardSprite[] sprites = gameObject.transform.Find("StartPoint").GetComponentsInChildren<CardSprite>();
         // 找出所有选中的
         List<Card> selectedCardsList = new List<Card>();
         List<CardSprite> selectedSpriteList = new List<CardSprite>();
